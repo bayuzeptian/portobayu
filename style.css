@@ -1,0 +1,168 @@
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #dbeafe 0%,
+    #eff6ff 50%,
+    #ffffff 100%
+  );
+  padding: 100px 0;
+}
+
+/* Navbar saat halaman berada di atas */
+#navbar {
+  background-color: #ffffff;
+  transition: background-color 0.4s ease,
+              box-shadow 0.4s ease;
+}
+
+/* Navbar saat halaman di-scroll */
+#navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: none !important;
+}
+
+/* Background section */
+.skills-section {
+  background: linear-gradient(
+    135deg,
+    #dbeafe 0%,
+    #eff6ff 50%,
+    #ffffff 100%
+  );
+  padding: 100px 0 !important;
+}
+
+/* Judul */
+.skills-title {
+  color: #102a4c;
+  font-size: 2.8rem;
+}
+
+/* Kartu kaca transparan */
+.skill-card {
+  min-height: 280px;
+  padding: 35px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  background: rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 24px;
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.08);
+
+  transition: transform 0.35s ease,
+              box-shadow 0.35s ease,
+              background 0.35s ease;
+}
+
+/* Ikon */
+.skill-icon {
+  font-size: 85px;
+  transition: transform 0.35s ease;
+}
+
+/* Warna ikon */
+.html-card .skill-icon {
+  color: #e44d26;
+}
+
+.css-card .skill-icon {
+  color: #264de4;
+}
+
+.bootstrap-card .skill-icon {
+  color: #7952b3;
+}
+
+.js-card .skill-icon {
+  color: #eab308;
+}
+
+/* Nama keahlian */
+.skill-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #102a4c;
+  margin: 0;
+}
+
+/* Garis warna di bawah */
+.skill-line {
+  width: 65px;
+  height: 6px;
+  border-radius: 20px;
+  transition: width 0.35s ease;
+}
+
+.html-card .skill-line {
+  background: #e44d26;
+}
+
+.css-card .skill-line {
+  background: #264de4;
+}
+
+.bootstrap-card .skill-line {
+  background: #7952b3;
+}
+
+.js-card .skill-line {
+  background: #facc15;
+}
+
+/* Efek saat mouse diarahkan ke kartu */
+.skill-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 18px 40px rgba(59, 130, 246, 0.16);
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.12);
+}
+
+.skill-card:hover .skill-line {
+  width: 100px;
+}
+
+/* Tampilan HP */
+@media (max-width: 576px) {
+  .skills-title {
+    font-size: 2.2rem;
+  }
+
+  .skill-card {
+    min-height: 210px;
+    padding: 25px 10px;
+    border-radius: 18px;
+  }
+
+  .skill-icon {
+    font-size: 60px;
+  }
+
+  .skill-card h3 {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #menu {
+    justify-content: center;
+  }
+
+  #menu .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
