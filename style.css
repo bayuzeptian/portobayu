@@ -166,3 +166,100 @@
     margin-right: auto;
   }
 }
+
+/* Background bagian Proyek Saya */
+#proyek {
+  background: linear-gradient(135deg, #dbeafe, #eff6ff, #bfdbfe);
+  padding: 60px 0;
+}
+
+/* Efek kaca pada kartu proyek */
+#proyek .card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek ketika mouse diarahkan ke kartu */
+#proyek .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(31, 38, 135, 0.25);
+}
+
+/* Gambar proyek */
+#proyek .card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Isi kartu */
+#proyek .card-body {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 24px;
+}
+
+/* Judul proyek */
+#proyek .card-title {
+  color: #12376b;
+  font-weight: bold;
+}
+
+/* Deskripsi proyek */
+#proyek .card-text {
+  color: #334155 !important;
+}
+
+/* Tombol proyek */
+#proyek .btn-outline-primary {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#proyek .btn-outline-primary:hover {
+  background: #2563eb;
+  color: white;
+  transform: scale(1.05);
+}
+.text-secondary {
+  font-size:22px ;
+}
+
+/* Ikon Hubungi Saya */
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.gmail {
+  background: #ea4335;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.tiktok {
+  background: #111111;
+}
+
+.contact-icon:hover {
+  transform: translateY(-7px) scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+}
